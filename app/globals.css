@@ -30,7 +30,7 @@ body {
 }
 
 .burger {
-  width: 22.5px;
+  width: 25px;
   cursor: pointer;
 }
 
@@ -42,6 +42,7 @@ body {
   height: 2px;
   background-color: white;
   position: relative;
+  transition: all 1s cubic-bezier(0.75, 0, 0.24, 1);
 }
 
 .burger::before {
@@ -50,4 +51,14 @@ body {
 
 .burger::after {
   bottom: -6px;
+}
+
+.burger-active::before {
+  bottom: -12px;
+  transform: rotate(45deg);
+}
+
+.burger-active::after {
+  bottom: -10px;
+  transform: rotate(-45deg);
 }

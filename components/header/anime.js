@@ -32,4 +32,38 @@ const animeSlide = {
   },
 };
 
-export { animeOpacity, animeSlide };
+const animeShift = {
+  initial: {
+    y: '100%',
+    opacity: 0,
+  },
+  open: (idx) => ({
+    y: 0,
+    opacity: 1,
+    transition: { ...transition, delay: idx },
+  }),
+  close: (idx) => ({
+    y: '100%',
+    opacity: 0,
+    transition: { ...transition, delay: -idx },
+  }),
+};
+
+const animeBlur = {
+  initial: {
+    opacity: 1,
+    filter: 'blur(0px)',
+  },
+  open: {
+    opacity: 0.8,
+    filter: 'blur(4px)',
+    transition: { duration: 0.25 },
+  },
+  close: {
+    opacity: 1,
+    filter: 'blur(0px)',
+    transition: { duration: 0.25 },
+  },
+};
+
+export { animeOpacity, animeSlide, animeShift, animeBlur };

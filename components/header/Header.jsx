@@ -11,16 +11,19 @@ const Header = () => {
 
   return (
     <div className="fixed w-full bg-[#1A3331]">
-      <div className="flex justify-between items-center h-fit p-4">
-        <Link href="/" className="text-lg md:text-md font-bold text-[#839D7E]">
+      <div className="flex justify-between items-center h-fit py-4 px-8">
+        <Link
+          href="/"
+          className="text-md md:text-xl font-bold text-[#839D7E] overflow-hidden"
+        >
           Happy Meat Farms
         </Link>
 
         <div
-          className="relative flex"
+          className="relative flex cursor-pointer"
           onMouseDown={() => setIsActive(!isActive)}
         >
-          <div className="burger mr-2"></div>
+          <div className={`burger mr-2  ${isActive && 'burger-active'}`}></div>
           <motion.p
             variants={animeOpacity}
             animate={isActive ? 'close' : 'open'}
