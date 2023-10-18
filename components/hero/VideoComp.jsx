@@ -6,7 +6,7 @@ const VideoComp = () => {
     <div className="flex w-full flex-col-reverse md:flex-row gap-6 mt-6">
       <div className="bg-[#112421] flex flex-col md:flex-row justify-evenly rounded-2xl p-4">
         <div className="p-2 w-full md:w-3/4">
-          <h3 className="text-3xl md:text-7xl font-semibold text-[#91A884] shadow-sm mb-4">
+          <h3 className="text-3xl md:text-6xl font-semibold text-[#91A884] shadow-sm mb-4">
             A farm you can trust
           </h3>
           <p className="opacity-75">

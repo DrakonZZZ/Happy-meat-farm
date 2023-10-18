@@ -1,4 +1,5 @@
 import HeroImage from './HeroImage';
+import News from './News';
 import VideoComp from './VideoComp';
 
 const Hero = () => {
@@ -6,6 +7,7 @@ const Hero = () => {
     <div className="w-full h-full text-white p-4 md:p-8 mt-8">
       <HeroImage />
       <VideoComp />
+      <News />
     </div>
   );
 };
