@@ -11,7 +11,6 @@ const HeroImage = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [key, setKey] = useState(0);
 
-  console.log(key);
   useEffect(() => {
     const interval = setInterval(() => {
       let nextIdx = (currentIndex + 1) % heroImages.length;
@@ -27,7 +26,7 @@ const HeroImage = () => {
   }, [currentIndex]);
 
   return (
-    <div className="relative w-full h-full overflow-hidden">
+    <div className="relative w-full h-[50vh] md:h-[90vh] overflow-hidden">
       <motion.div
         variants={animeOpacity}
         initial="initial"
