@@ -2,11 +2,17 @@ import { motion } from 'framer-motion';
 import { links } from '@/data/links';
 import Link from 'next/link';
 import { animeShift, animeBlur } from './anime';
+import NavImage from './NavImage';
 
 const NavBody = ({ hoverLink, setHoverLink }) => {
   return (
     <div className="flex mt-6">
-      <div className=" w-full p-2 text-right"></div>
+      <div className="hidden md:block w-full p-2 text-right mb-4 relative">
+        <NavImage
+          src={links[hoverLink.idx].src}
+          isActive={hoverLink.isActive}
+        />
+      </div>
       <div className="flex flex-wrap justify-end gap-x-8">
         {links.map((link, idx) => {
           const { title, href, src } = link;
@@ -44,7 +50,6 @@ const letterAnime = (letter, idx, active) => {
       initial="initial"
       animate="open"
       exit="close"
-      className="text-[#839D7E] hover:text-white"
     >
       {letter}
     </motion.span>

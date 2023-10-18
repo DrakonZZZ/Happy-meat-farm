@@ -1,3 +1,5 @@
+const transition = { duration: 1, ease: [0.75, 0, 0.24, 1] };
+
 const animeOpacity = {
   initial: {
     opacity: 0,
@@ -15,8 +17,6 @@ const animeOpacity = {
     },
   },
 };
-
-const transition = { duration: 1, ease: [0.75, 0, 0.24, 1] };
 
 const animeSlide = {
   initial: {
@@ -66,4 +66,18 @@ const animeBlur = {
   },
 };
 
-export { animeOpacity, animeSlide, animeShift, animeBlur };
+const animeBackdrop = {
+  initial: {
+    height: 0,
+  },
+  enter: {
+    height: '100vh',
+    transition,
+  },
+  exit: {
+    height: 0,
+    transition,
+  },
+};
+
+export { animeOpacity, animeSlide, animeShift, animeBlur, animeBackdrop };
