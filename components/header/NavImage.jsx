@@ -15,7 +15,7 @@ const NavImage = ({ src, isActive }) => {
         objectFit="cover"
         objectPosition="center"
         fill={true}
-        alt={src}
+        alt="nav link images"
         className="rounded-lg"
       />
     </motion.div>

@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { animeShift, animeBlur } from './anime';
 import NavImage from './NavImage';
 
-const NavBody = ({ hoverLink, setHoverLink }) => {
+const NavBody = ({ hoverLink, setHoverLink, setIsActive }) => {
   return (
     <div className="flex mt-6">
       <div className="hidden md:block w-full p-2 text-right mb-4 relative">
@@ -23,6 +23,7 @@ const NavBody = ({ hoverLink, setHoverLink }) => {
               className="overflow-hidden"
               onMouseEnter={() => setHoverLink({ isActive: true, idx })}
               onMouseLeave={() => setHoverLink({ isActive: false, idx })}
+              onMouseDown={() => setIsActive(false)}
             >
               <motion.p
                 variants={animeBlur}
@@ -31,7 +32,7 @@ const NavBody = ({ hoverLink, setHoverLink }) => {
                 }
                 className="flex text-3xl md:text-6xl uppercase"
               >
-                {letterAnime(title, idx, hoverLink.isActive)}
+                {letterAnime(title, idx)}
               </motion.p>
             </Link>
           );
@@ -41,7 +42,7 @@ const NavBody = ({ hoverLink, setHoverLink }) => {
   );
 };
 
-const letterAnime = (letter, idx, active) => {
+const letterAnime = (letter, idx) => {
   return (
     <motion.span
       key={`@c_${idx}`}

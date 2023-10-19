@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <footer className=" bg-[#18332F] px-6 py-4">
+    <footer className="bg-primary px-6 py-4">
       <p className="text-[#91A884] text-xs text-center mb-2 opacity-30">
         All characters and corporations or establishments appearing in this work
         are fictitious. Any resemblance to real companies or persons is purely

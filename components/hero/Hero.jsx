@@ -4,7 +4,7 @@ import VideoComp from './VideoComp';
 
 const Hero = () => {
   return (
-    <div className="w-full h-full text-white p-4 md:p-8 mt-8">
+    <div className="w-full h-full text-white px-8 py-4">
       <HeroImage />
       <VideoComp />
       <News />

@@ -22,8 +22,11 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: initial;
+  overflow: hidden;
 }
 
+/* Burger menu transition */
 .burger {
   width: 25px;
   cursor: pointer;
@@ -58,11 +61,14 @@ body {
   transform: rotate(-45deg);
 }
 
+/* video arrow transition */
+
 .arrow:hover svg {
   transform: translateX(4px);
 }
 
-::-webkit-scrollbar {
+/* custom scroll */
+/* ::-webkit-scrollbar {
   width: 4px;
 }
 
@@ -82,4 +88,49 @@ body {
 
 ::-webkit-scrollbar-track:hover {
   background-color: #0a0d11;
+} */
+
+/* 404 styling */
+
+.error {
+  order: 0;
+  flex: 0 1 auto;
+  align-self: auto;
+  width: 60%;
+}
+.error svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  fill: #fff;
+}
+
+.links {
+  order: 0;
+  flex: 0 1 auto;
+  align-self: auto;
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: stretch;
+  align-items: flex-start;
+}
+.links a {
+  order: 0;
+  flex: 0 1 auto;
+  align-self: auto;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+}
+.links a:hover {
+  background-color: #fff;
+  color: #34559a;
+  text-decoration: none;
 }

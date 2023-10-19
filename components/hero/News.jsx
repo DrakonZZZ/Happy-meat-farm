@@ -3,15 +3,15 @@ import { news } from '@/data/newsdata';
 
 const News = () => {
   return (
-    <div className="mt-8 p-4 bg-[#112421] rounded-2xl">
-      <h3 className="text-6xl font-semibold mb-4 text-[#91A884]">News</h3>
+    <div className="mt-8 p-4 bg-primary rounded-2xl">
+      <h3 className="text-6xl font-semibold mb-4 text-secondary">News</h3>
       <div className="flex flex-col md:flex-row gap-4">
         {news.map((data, idx) => {
           const { id, title, content, date, src } = data;
           return (
             <div key={id} className=" h-full md:1/3 relative">
               <div>
-                <p className="p-1 text-xs font-bold leading-3 text-[#91A884] absolute top-2 right-2 z-10 bg-[#18332F] rounded-md">
+                <p className="p-1 text-xs font-bold leading-3 text-secondary absolute top-2 right-2 z-10 bg-[#18332F] rounded-md">
                   {date}
                 </p>
                 <div className="absolute bottom-0 left-0 p-4 z-10">

@@ -37,6 +37,4 @@ const animeShift = {
   }),
 };
 
-const animeBackdrop = {};
-
 export { animeOpacity, animeShift };

@@ -1,10 +1,9 @@
 import { motion } from 'framer-motion';
 import { animeSlide } from './anime';
 import NavBody from './NavBody';
-import { links } from '@/data/links';
 import { useState } from 'react';
 
-export const Nav = () => {
+export const Nav = ({ setIsActive }) => {
   const [hoverLink, setHoverLink] = useState({ isActive: false, idx: 0 });
 
   return (
@@ -16,7 +15,11 @@ export const Nav = () => {
       className="overflow-hidden px-4"
     >
       <div className="m-0">
-        <NavBody hoverLink={hoverLink} setHoverLink={setHoverLink} />
+        <NavBody
+          setIsActive={setIsActive}
+          hoverLink={hoverLink}
+          setHoverLink={setHoverLink}
+        />
       </div>
     </motion.div>
   );
