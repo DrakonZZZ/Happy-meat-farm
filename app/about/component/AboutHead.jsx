@@ -1,7 +1,7 @@
 const AboutHead = () => {
   return (
-    <div className="mb-6">
-      <h2 className="text-4xl md:text-5xl font-semibold capitalize text-secondary mb-2 py-2">
+    <div className="mb-8">
+      <h2 className="text-4xl md:text-5xl font-semibold capitalize text-secondary mb-4 py-2">
         About happy meat farm
       </h2>
       <h3 className="text-ternary font-medium leading-4">

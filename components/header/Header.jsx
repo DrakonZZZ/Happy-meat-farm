@@ -51,9 +51,6 @@ const Header = () => {
             variants={animeOpacity}
             animate={isActive ? 'close' : 'open'}
           >
-            <Link href="/service">
-              <span>Service</span>
-            </Link>
             <Link href="/login">
               <span>Login</span>
             </Link>

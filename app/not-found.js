@@ -12,7 +12,7 @@ const NotFound = () => {
       </div>
       <Link
         href="/"
-        className="w-fit px-4 py-2 rounded-2xl text-secondary text-3xl mt-4 bg-[#112421] hover:bg-primary]"
+        className="w-fit px-4 py-2 rounded-2xl text-secondary text-3xl mt-4 bg-ternary hover:bg-ternary/80"
       >
         Home
       </Link>
