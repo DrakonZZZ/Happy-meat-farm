@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import fieldView from '../../public/images/view.webp';
+import fieldView from '../../public/images/view.jpg';
 import { PiPottedPlant, PiFlask, PiTruckDuotone } from 'react-icons/pi';
 import Player from './Player';
 
@@ -59,7 +59,6 @@ const VideoComp = () => {
               alt="about-us-image"
               fill={true}
               style={{ objectFit: 'cover', borderRadius: '12px' }}
-              className="box-shadow"
             />
             <span className="arrow absolute flex items-center gap-3 bottom-1 right-2 bg-[#112421] text-[#91A884] py-2 px-3 rounded-lg text-sm font-bold cursor-pointer hover:text-[#112421] hover:bg-[#91A884] transition">
               About Us

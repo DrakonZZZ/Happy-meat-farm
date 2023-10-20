@@ -11,9 +11,9 @@ const Product = () => {
             <span className="block">Services</span>
           </h2>
         </div>
-        <h3 className="text-ternary/80 pl-4 md:w-1/2">
+        <p className="text-ternary/80 pl-4 md:w-1/2">
           See how Happy Meat Farms is shaping a new world in the meat industry.
-        </h3>
+        </p>
       </div>
 
       <div>
@@ -23,7 +23,7 @@ const Product = () => {
             return (
               <div
                 key={id}
-                className="w-fit md:w-[450px] p-8 border-2 border-ternary/30 rounded-lg"
+                className="w-fit md:w-[450px] p-8 border-2 border-ternary/30 "
               >
                 <h3 className="text-2xl md:text-4xl font-semibold mb-2 uppercase">
                   {title}
