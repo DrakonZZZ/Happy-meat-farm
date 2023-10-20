@@ -8,19 +8,19 @@ export default function Home() {
   useEffect(() => {
     const lenis = new Lenis();
 
-    lenis.on('scroll', (e) => {
-      console.log(e);
-    });
-
     function raf(time) {
       lenis.raf(time);
       requestAnimationFrame(raf);
     }
 
     requestAnimationFrame(raf);
+
+    return () => {
+      lenis.destroy();
+    };
   });
   return (
-    <main className="flex  min-h-screen flex-col items-center justify-between bg-[#18332F]">
+    <main className="flex  min-h-screen flex-col items-center justify-between bg-primary">
       <Hero />
     </main>
   );

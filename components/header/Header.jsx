@@ -18,6 +18,7 @@ const Header = () => {
           <Link
             href="/"
             className="text-md md:text-xl font-bold  uppercase overflow-hidden"
+            onMouseDown={() => setIsActive(!isActive)}
           >
             <motion.span>Happy Meat Farms</motion.span>
           </Link>
