@@ -1,3 +1,8 @@
+import { SiRoamresearch } from 'react-icons/si';
+import { FaHeadSideVirus } from 'react-icons/fa';
+import { VscFeedback, VscSettingsGear } from 'react-icons/vsc';
+import { BiHelpCircle } from 'react-icons/bi';
+
 const links = [
   {
     title: 'Products & Services',
@@ -45,4 +50,40 @@ const heroImages = [
   },
 ];
 
-export { links, heroImages };
+const dashboardLinks = [
+  {
+    id: 1,
+    title: 'R&D Department',
+    link: '/rdportal',
+    icon: <SiRoamresearch size={22} className="text-secondary" />,
+  },
+  {
+    id: 2,
+    title: 'HR Department',
+    link: '/hrportal',
+    icon: <FaHeadSideVirus size={22} className="h-7 w-7 text-secondary" />,
+  },
+  {
+    id: 3,
+    title: 'Feedback',
+    link: '/feedback',
+    icon: <VscFeedback size={22} className="h-7 w-7 text-secondary" />,
+  },
+];
+
+const dashboardLinks2 = [
+  {
+    id: 1,
+    title: 'Help Center',
+    link: '/',
+    icon: <BiHelpCircle size={22} className="text-secondary" />,
+  },
+  {
+    id: 2,
+    title: 'Settings',
+    link: '/',
+    icon: <VscSettingsGear size={22} className="h-7 w-7 text-secondary" />,
+  },
+];
+
+export { links, heroImages, dashboardLinks, dashboardLinks2 };

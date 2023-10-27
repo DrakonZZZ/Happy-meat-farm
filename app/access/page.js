@@ -1,5 +1,6 @@
 import meetingImg from '../../public/images/access/meeting.webp';
 import Image from 'next/image';
+import AccessInput from './component/AccessInput';
 
 const page = () => {
   return (
@@ -27,10 +28,7 @@ const page = () => {
           </div>
 
           <div className="p-4 text-center border border-secondary/40 rounded-md">
-            <input
-              type="password"
-              className="h-20 w-full text-2xl text-primary p-4 bg-[#dededb] rounded-md border-none outline-none shadow-inner"
-            />
+            <AccessInput />
             <p className="text-ternary/60 text-md p-4 md:w-full leading-5">
               Current HMF employees can access our employee portal by entering
               your Access card code. Each employee should have a unique HMFID

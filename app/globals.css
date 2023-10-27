@@ -123,8 +123,3 @@ input[type='password'] {
   letter-spacing: 0.3em;
   color: #6b8c58;
 }
-
-.outline-text {
-  -webkit-text-stroke-width: 3px;
-  -webkit-text-stroke-color: #6b8c58;
-}
