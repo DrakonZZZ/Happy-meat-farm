@@ -2,6 +2,7 @@ import Image from 'next/image';
 import fieldView from '../../public/images/view.jpg';
 import { PiPottedPlant, PiFlask, PiTruckDuotone } from 'react-icons/pi';
 import Player from './Player';
+import Link from 'next/link';
 
 const VideoComp = () => {
   return (
@@ -60,9 +61,11 @@ const VideoComp = () => {
               fill={true}
               style={{ objectFit: 'cover', borderRadius: '12px' }}
             />
-            <span className="arrow absolute flex items-center gap-3 bottom-1 right-2 bg-[#112421] text-[#91A884] py-2 px-3 rounded-lg text-sm font-bold cursor-pointer hover:text-[#112421] hover:bg-[#91A884] transition">
-              About Us
-            </span>
+            <Link href="/about">
+              <span className="arrow absolute flex items-center gap-3 bottom-1 right-2 bg-[#112421] text-[#91A884] py-2 px-3 rounded-lg text-sm font-bold cursor-pointer hover:text-[#112421] hover:bg-[#91A884] transition">
+                About Us
+              </span>
+            </Link>
           </div>
         </div>
       </div>

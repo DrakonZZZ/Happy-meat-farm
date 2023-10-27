@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const AboutBody = () => {
   return (
-    <div className="w-full grid md:grid-cols-2 gap-4">
+    <div className="w-full grid md:grid-cols-2 lg:grid-cols-4 gap-4">
       {aboutData.map((data) => {
         const { id, title, content, src } = data;
         return (
@@ -13,8 +13,8 @@ const AboutBody = () => {
               alt={title}
               width={400}
               height={400}
-              style={{ objectFit: 'cover', height: '300px' }}
-              className="w-full rounded-xl contrast-125"
+              style={{ objectFit: 'cover' }}
+              className="w-full h-[400px] md:h-[300px] lg:h-[500px] rounded-xl contrast-125"
             />
             <div>
               <div className="w-full h-full absolute top-0 left-0 p-4 z-10 flex flex-col justify-between">

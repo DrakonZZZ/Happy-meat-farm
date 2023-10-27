@@ -1,5 +1,3 @@
-import { aboutData } from '@/data/newsdata';
-import Image from 'next/image';
 import AboutHead from './component/AboutHead';
 import AboutBody from './component/AboutBody';
 

@@ -20,7 +20,7 @@ const page = () => {
         <div className="md:w-2/3  bg-[#e6e7e3] text-ternary  md:rounded-tr-lg md:rounded-br-lg flex flex-col justify-start p-4">
           <div className="mb-4">
             <h2 className="text-3xl font-semibold">Contact Us</h2>
-            <h3 className="text-lg font-medium text-ternary/60">
+            <h3 className="text-lg font-medium text-ternary/60 py-3">
               Thank you for your interest in Happy Meat Farms.
             </h3>
           </div>

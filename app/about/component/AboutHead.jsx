@@ -1,10 +1,10 @@
 const AboutHead = () => {
   return (
-    <div className="mb-8">
-      <h2 className="text-4xl md:text-5xl font-semibold capitalize text-secondary mb-4 py-2">
+    <div className="mb-10">
+      <h2 className="text-4xl md:text-5xl lg:text-6xl font-semibold capitalize text-secondary py-2">
         About happy meat farm
       </h2>
-      <h3 className="text-ternary font-medium leading-4">
+      <h3 className="text-ternary font-medium leading-4 mt-4">
         Happy Meat Farms was founded in 1998 when Ramona Bynes inherited a plot
         of land in Florida. Being an animal lover her whole life, she was always
         disgusted by the mistreatment and animal cruelty in the food industry.

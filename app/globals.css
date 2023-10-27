@@ -37,7 +37,7 @@ body {
   content: '';
   display: block;
   width: 100%;
-  height: 2px;
+  height: 3px;
   background-color: #91a884;
   position: relative;
   transition: all 1s cubic-bezier(0.75, 0, 0.24, 1);
@@ -48,7 +48,7 @@ body {
 }
 
 .burger::after {
-  bottom: -6px;
+  bottom: -5px;
 }
 
 .burger-active::before {
@@ -117,4 +117,14 @@ body {
   background-color: #fff;
   color: #34559a;
   text-decoration: none;
+}
+
+input[type='password'] {
+  letter-spacing: 0.3em;
+  color: #6b8c58;
+}
+
+.outline-text {
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: #6b8c58;
 }
