@@ -6,7 +6,7 @@ import fieldView from '../../public/images/view.jpg';
 const page = () => {
   return (
     <main className="bg-primary flex-1 flex justify-center items-center text-secondary w-fully">
-      <div className="w-full md:w-[80%] flex flex-col md:flex-row shadow-md m-4">
+      <div className="w-full md:w-[90%] lg:w-[75%] xl:lg:w-[65%]  flex flex-col md:flex-row shadow-md m-4">
         <div className="md:w-1/3 h-[300px] md:h-[600px] relative md:rounded-tl-lg md:rounded-bl-lg">
           <div>
             <Image

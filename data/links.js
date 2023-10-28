@@ -53,21 +53,31 @@ const heroImages = [
 const dashboardLinks = [
   {
     id: 1,
-    title: 'R&D Department',
-    link: '/rdportal',
+    title: 'Home',
+    link: 'home',
     icon: <SiRoamresearch size={22} className="text-secondary" />,
+    imageSrc: 'dashboard/home.webp',
   },
   {
     id: 2,
-    title: 'HR Department',
-    link: '/hrportal',
-    icon: <FaHeadSideVirus size={22} className="h-7 w-7 text-secondary" />,
+    title: 'R&D Department',
+    link: 'rndportal',
+    icon: <SiRoamresearch size={22} className="text-secondary" />,
+    imageSrc: 'dashboard/rnd.jpg',
   },
   {
     id: 3,
+    title: 'HR Department',
+    link: 'hrportal',
+    icon: <FaHeadSideVirus size={22} className="h-7 w-7 text-secondary" />,
+    imageSrc: 'dashboard/hr.jpg',
+  },
+  {
+    id: 4,
     title: 'Feedback',
-    link: '/feedback',
+    link: 'feedback',
     icon: <VscFeedback size={22} className="h-7 w-7 text-secondary" />,
+    imageSrc: 'dashboard/feedback.webp',
   },
 ];
 
