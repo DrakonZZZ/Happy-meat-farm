@@ -124,6 +124,9 @@ input[type='password'] {
   color: #6b8c58;
 }
 
-.active-link {
-  filter: contrast(100%);
+.text-rotate {
+  letter-spacing: 3px;
+
+  transform-origin: 0 0;
+  transform: rotate(270deg);
 }

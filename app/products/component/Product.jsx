@@ -1,4 +1,4 @@
-import { productData } from '@/data/newsdata';
+import { productData } from '@/data/productData';
 
 const Product = () => {
   return (

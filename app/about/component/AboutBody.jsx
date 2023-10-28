@@ -1,4 +1,4 @@
-import { aboutData } from '@/data/newsdata';
+import { aboutData } from '@/data/aboutData';
 import Image from 'next/image';
 
 const AboutBody = () => {

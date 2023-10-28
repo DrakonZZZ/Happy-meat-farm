@@ -7,11 +7,11 @@ import { useSelectedLayoutSegment } from 'next/navigation';
 
 const PortalSidebar = () => {
   return (
-    <section className="border-r border-ternary/30 w-[26rem] rounded-sm p-2">
+    <section className="border-l border-ternary/30 md:w-[26rem] rounded-sm p-2">
       <h3 className="text-secondary font-semibold text-xl border-b border-ternary/30 mr-4 p-4">
         Dashboard
       </h3>
-      <div className="h-[80vh] flex flex-col justify-between">
+      <div className=" flex-col md:h-[80vh] flex md:flex-row lg:flex-col justify-between">
         <DashboardLink link={dashboardLinks} />
         {/* <DashboardLink link={dashboardLinks2} /> */}
       </div>
@@ -34,8 +34,8 @@ const DashboardLink = ({ link }) => {
               href={link}
               passHref
               className={`${
-                activeSegment === link ? 'text-white ' : null
-              }flex flex-col text-md font-semibold text-white/60 hover:text-white  transition duration-300  group`}
+                activeSegment === link ? 'text-white ' : 'text-white/60'
+              } flex flex-col text-md font-semibold  hover:text-white  transition duration-300  group`}
             >
               <span className="relative z-10 text-[1.2rem] font-medium">
                 {title}
