@@ -7,7 +7,7 @@ import { useSelectedLayoutSegment } from 'next/navigation';
 
 const PortalSidebar = () => {
   return (
-    <section className="border-l border-ternary/30 md:w-[26rem] rounded-sm p-2">
+    <section className="border-l border-ternary/30 md:min-w-[15rem] lg:w-[26rem] rounded-sm p-2">
       <h3 className="text-secondary font-semibold text-xl border-b border-ternary/30 mr-4 p-4">
         Dashboard
       </h3>

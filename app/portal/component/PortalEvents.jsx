@@ -3,11 +3,11 @@ import { fakeNews } from '@/data/fakeNews';
 
 const PortalEvents = () => {
   return (
-    <section className="border-r border-ternary/30 md:w-[30rem] text-white  rounded-sm p-2">
+    <section className="border-r border-ternary/30 md:min-w-[15rem] lg:w-[30rem] text-white  rounded-sm p-2">
       <h3 className="text-3xl font-semibold mb-4 text-secondary">
         Recent Fake News
       </h3>
-      <p className="text-zinc-500/60 text-md mb-2">
+      <p className="text-zinc-500/60 text-md mb-4 leading-5 p-2">
         As many of you know, HMF has been the target of many fake news attacks
         from the media and other sources. We want you to know that these are all
         lies and we're taking action against anyone who stands in our way.

@@ -37,7 +37,7 @@ const HeroImage = () => {
           src={hero}
           style={{ objectFit: 'cover', borderRadius: '20px' }}
           fill={true}
-          alt={heroImages[currentIndex].title}
+          alt="chicken coup"
         />
       </motion.div>
       <AnimatePresence mode="wait">
