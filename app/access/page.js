@@ -16,12 +16,12 @@ const page = () => {
           />
         </div>
 
-        <div className=" h-[100%] md:absolute top-0 right-24 flex flex-col justify-between md:w-1/3 p-4 bg-primary z-20 text-right">
+        <div className="h-[100%] md:absolute top-0 right-24 flex flex-col justify-between md:w-[30rem] p-4 bg-primary z-20 text-right">
           <div>
             <h2 className="text-secondary text-4xl lg:text-5xl xl:text-6xl font-semibold p-4">
               Welcome to the Happy Meat Farms Family
             </h2>
-            <h3 className="text-ternary/60 md:text-2xl p-4">
+            <h3 className="text-ternary/60 md:text-2xl p-4 ">
               Happy Meat Farms is a growing community that is continually
               expanding and adding more people to its collective.
             </h3>

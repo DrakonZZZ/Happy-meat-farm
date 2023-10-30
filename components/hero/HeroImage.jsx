@@ -26,7 +26,7 @@ const HeroImage = () => {
   }, [currentIndex]);
 
   return (
-    <div className="relative w-full h-[50vh] md:h-[90vh] overflow-hidden">
+    <div className="relative w-full h-[40vh] md:h-[60vh] overflow-hidden">
       <motion.div
         variants={animeOpacity}
         initial="initial"
@@ -42,7 +42,7 @@ const HeroImage = () => {
       </motion.div>
       <AnimatePresence mode="wait">
         <motion.div
-          className="absolute bottom-4 left-4 text-4xl md:text-8xl"
+          className="absolute bottom-4 left-4 text-4xl md:text-5xl lg:text-8xl"
           key={key}
         >
           <h3 className="font-light overflow-hidden">

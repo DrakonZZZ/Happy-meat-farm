@@ -1,8 +1,17 @@
+'use client';
+
 import { productData } from '@/data/productData';
+import { motion } from 'framer-motion';
 
 const Product = () => {
   return (
-    <div className="h-full flex flex-col md:flex-row justify-evenly">
+    <motion.div
+      variants={animeOpacity}
+      initial="initial"
+      animate="open"
+      exit="close"
+      className="h-full flex flex-col md:flex-row justify-evenly"
+    >
       <div className="md:flex flex-col justify-center md:w-1/3 mb-6 md:mb-0">
         <div className="border-l-4 border-secondary">
           <h2 className="text-4xl lg:text-6xl font-semibold uppercase pl-4">
@@ -21,7 +30,14 @@ const Product = () => {
           {productData.map((data) => {
             const { id, title, content } = data;
             return (
-              <div
+              <motion.div
+                variants={{
+                  hidden: { opacity: 0, x: '-30px' },
+                  visible: { opacity: 1, x: '0' },
+                }}
+                transition={{ delay: 0.3 * id, duration: 0.5 }}
+                initial="hidden"
+                animate="visible"
                 key={id}
                 className="w-fit md:w-[450px] p-8 divide-x border-2 border-ternary/30 "
               >
@@ -29,13 +45,34 @@ const Product = () => {
                   {title}
                 </h3>
                 <p className="text-ternary font-sm">{content}</p>
-              </div>
+              </motion.div>
             );
           })}
         </div>
       </div>
-    </div>
+    </motion.div>
   );
+};
+
+const animeOpacity = {
+  initial: {
+    opacity: 0,
+  },
+  open: {
+    opacity: 1,
+    transition: {
+      duration: 0.25,
+      ease: 'easeIn',
+      delay: 0.5,
+    },
+  },
+  close: {
+    opacity: 0,
+    transition: {
+      duration: 0.5,
+      ease: 'easeOut',
+    },
+  },
 };
 
 export default Product;

@@ -10,11 +10,6 @@ const links = [
     src: 'farm.webp',
   },
   {
-    title: 'Shop',
-    href: '/shop',
-    src: 'chicken.webp',
-  },
-  {
     title: 'Abous Us',
     href: '/about',
     src: 'about.webp',
@@ -26,7 +21,7 @@ const links = [
   },
   {
     title: 'Employee Access',
-    href: 'access',
+    href: '/access',
     src: 'access.webp',
   },
 ];

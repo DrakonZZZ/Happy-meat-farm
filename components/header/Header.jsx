@@ -10,8 +10,12 @@ const Header = () => {
   const [isActive, setIsActive] = useState(false);
 
   return (
-    <div className="mb-[56px]">
-      <div
+    <nav className="mb-[56px]">
+      <motion.div
+        initial={{ y: '-100%' }}
+        animate={{ y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5, ease: 'easeInOut' }}
         className={`fixed top-0 left-0 w-full bg-primary z-50 text-secondary`}
       >
         <div className="flex justify-between items-center h-fit py-4 px-8">
@@ -20,7 +24,7 @@ const Header = () => {
             className="text-md md:text-xl font-bold  uppercase overflow-hidden"
             onMouseDown={() => setIsActive(false)}
           >
-            <motion.span>Happy Meat Farms</motion.span>
+            <motion.span>HMF</motion.span>
           </Link>
 
           <div
@@ -65,8 +69,8 @@ const Header = () => {
         <AnimatePresence mode="wait">
           {isActive && <Nav setIsActive={setIsActive} />}
         </AnimatePresence>
-      </div>
-    </div>
+      </motion.div>
+    </nav>
   );
 };
 

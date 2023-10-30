@@ -9,6 +9,7 @@ const animeOpacity = {
     transition: {
       duration: 0.5,
       ease: 'easeIn',
+      delay: 0.2,
     },
   },
   close: {

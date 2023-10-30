@@ -1,15 +1,51 @@
 import Image from 'next/image';
 import { news } from '@/data/newsdata';
+import { motion, useAnimation, useInView } from 'framer-motion';
+import { useEffect, useRef } from 'react';
 
 const News = () => {
+  const newsRef = useRef(null);
+  const cardRef = useRef(null);
+  const isInView = useInView(newsRef, { once: true });
+
+  const controls = useAnimation();
+
+  useEffect(() => {
+    if (isInView) {
+      controls.start('visible');
+    }
+  }, [isInView]);
   return (
     <div className="mt-8 md:p-4 bg-primary rounded-2xl">
-      <h3 className="text-6xl font-semibold mb-4 text-secondary">News</h3>
+      <motion.h3
+        ref={newsRef}
+        variants={{
+          hidden: { opacity: 0, x: '-100px' },
+          visible: { opacity: 1, x: '0' },
+        }}
+        transition={{ delay: 0.3, duration: 0.5 }}
+        initial="hidden"
+        animate={controls}
+        className="text-6xl font-semibold mb-4 text-secondary"
+      >
+        News
+      </motion.h3>
       <div className="flex flex-col md:flex-row gap-4">
         {news.map((data, idx) => {
           const { id, title, content, date, src } = data;
           return (
-            <div key={id} className="h-full md:w-1/3 relative">
+            <motion.div
+              ref={cardRef}
+              key={id}
+              variants={{
+                hidden: { opacity: 0, x: '-50px' },
+                visible: { opacity: 1, x: '0' },
+              }}
+              transition={{ delay: 0.3 * idx, duration: 0.5 }}
+              initial="hidden"
+              animate={controls}
+              className="h-full md:w-1/3 relative"
+            >
               <div>
                 <p className="p-1 text-xs font-bold leading-3 absolute top-2 right-2 z-10  rounded-md">
                   {date}
@@ -54,7 +90,7 @@ const News = () => {
                 style={{ objectFit: 'cover', height: '300px' }}
                 className="w-full rounded-xl"
               />
-            </div>
+            </motion.div>
           );
         })}
       </div>
