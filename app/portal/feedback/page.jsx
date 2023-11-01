@@ -12,7 +12,7 @@ const Feedback = () => {
         make sure to watch the employee orientation video.
       </h2>
       <div>
-        <div></div>
+        <div className="text-zinc-500/60 text-6xl">ACCESS RESTRICTED</div>
       </div>
     </div>
   );

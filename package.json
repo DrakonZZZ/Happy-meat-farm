@@ -11,8 +11,8 @@
   },
   "dependencies": {
     "@studio-freight/lenis": "^1.0.27",
+    "cookie": "^0.5.0",
     "framer-motion": "^10.16.4",
-    "js-cookie": "^3.0.5",
     "next": "13.5.5",
     "react": "^18",
     "react-dom": "^18",

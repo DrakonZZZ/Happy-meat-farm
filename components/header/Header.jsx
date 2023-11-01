@@ -5,10 +5,11 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { animeOpacity, animeBackdrop } from './anime';
 import { Nav } from './Nav';
+import { usePathname } from 'next/navigation';
 
 const Header = () => {
   const [isActive, setIsActive] = useState(false);
-
+  const pathname = usePathname();
   return (
     <nav className="mb-[56px]">
       <motion.div
@@ -55,9 +56,11 @@ const Header = () => {
             variants={animeOpacity}
             animate={isActive ? 'close' : 'open'}
           >
-            <Link href="/login">
-              <span>Login</span>
-            </Link>
+            {pathname !== '/' ? null : (
+              <Link href="/access">
+                <span>Access</span>
+              </Link>
+            )}
           </motion.div>
         </div>
         <motion.div
