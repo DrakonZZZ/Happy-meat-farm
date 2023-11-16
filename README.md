@@ -1,4 +1,4 @@
-# Next.js Augmented Reality Gaming (ARG) Site
+# 🚀 Next.js Augmented Reality Gaming (ARG) Site
 
 This project is an Augmented Reality Gaming (ARG) site reimaged using Next.js, integrating cookies for authentication and session management.
 
@@ -10,7 +10,7 @@ The Next.js framework has been utilized to reimagine an Augmented Reality Gaming
 ## Technology Stack
 
 - **Next.js**: Server-side rendering and quick deployment
-- **Cookies**: Authentication and session management
+- **Cookies**: Authentication and session management🍪
 
 ## Getting Started
 
@@ -22,26 +22,30 @@ To run the project locally, follow these steps:
 
    ```sh
    git clone https://github.com/DrakonZZZ/Happy-meat-farm
-Install Dependencies
 
-Navigate to the project directory and install the required dependencies using npm or yarn:
+2. Install Dependencies
 
-sh
-Copy code
-cd Happy-meat-farm
-npm install
-# or
-pnpm
-Run the Project
+   Navigate to the project directory and install the required dependencies using npm or yarn:
+   
+   ```sh
+   Copy code
+   cd Happy-meat-farm
+   npm install
+   # or
+   pnpm
+   ```
 
-To start the development server, run one of the following commands:
+3. Run the Project
+   
+   To start the development server, run one of the following commands:
+   
+   ```sh
+   npm run dev
+   # or
+   yarn dev
+   ```
 
-sh
-npm run dev
-# or
-yarn dev
-Preview the Project
-
+## Preview the Project
 Open your web browser and visit http://localhost:3000 to see the project in action.
 
 License
@@ -50,6 +54,7 @@ This project is released under the MIT License.
 © 2023 Drakonz
 
 MIT License Terms
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction. This includes the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software. Under this license, you can also permit others to use the software, subject to the following conditions:
+Feel free to explore, contribute, and enhance this ARG site for an even more exciting digital adventure! 🚀👾
 
