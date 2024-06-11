@@ -11,12 +11,12 @@
   },
   "dependencies": {
     "@studio-freight/lenis": "^1.0.27",
-    "cookie": "^0.5.0",
-    "framer-motion": "^10.16.4",
-    "next": "13.5.5",
+    "cookie": "^0.6.0",
+    "framer-motion": "^11.2.10",
+    "next": "14.2.3",
     "react": "^18",
     "react-dom": "^18",
-    "react-icons": "^4.11.0"
+    "react-icons": "^5.2.1"
   },
   "devDependencies": {
     "autoprefixer": "^10",
