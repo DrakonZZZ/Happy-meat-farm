@@ -1,6 +1,7 @@
 # 🚀 Next.js Augmented Reality Gaming (ARG) Based Site
 
 This project is an Augmented Reality Gaming (ARG) site reimaged using Next.js, integrating cookies for authentication and session management.
+[Official ARG Channel](https://www.youtube.com/@thisplaceisnothappy6278)
 
 ## Description
 
